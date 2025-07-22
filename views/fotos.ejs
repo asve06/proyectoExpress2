@@ -59,7 +59,7 @@
               <td class="fw-semibold text-secondary"><%= foto.titulo %></td>
               <td class="text-muted"><%= foto.descripcion %></td>
               <td><span class="badge bg-success fs-6"><%= foto.calificacion %></span></td>
-              <td><img src="/<%= foto.ruta.replace('public/', '') %>" alt="Foto" class="img-preview"></td>
+              <td><img src="/<%= foto.ruta.replace('public/', '') %>" alt="<%= foto.titulo %>"  class="img-preview"></td>
               <td><%= new Date(foto.createdAt).toLocaleDateString() %></td>
               <td>
                 <% if (foto.etiqueta && foto.etiqueta.length > 0) { %>
